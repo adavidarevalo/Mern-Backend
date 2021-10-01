@@ -8,11 +8,7 @@ connectDataBase()
 
 app.use(express.json({ extended: true }))
 
-const CorsOptions = {
-    origin: "https://fervent-brown-e592e4.netlify.app/"
-  }
-
-app.use(cors(CorsOptions))
+app.use(cors())
 
 const PORT = process.env.Port || 4000;
 
